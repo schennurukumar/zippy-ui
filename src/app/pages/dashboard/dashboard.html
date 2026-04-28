@@ -1,6 +1,15 @@
-<div>
-  <h2>Helper Dashboard</h2>
-  <p>Available tasks will appear here</p>
+<div style="padding: 20px;">
+  <h2>Available Tasks</h2>
 
-  <button routerLink="/">⬅ Back to Home</button>
+  @for (task of tasks; track task) {
+    <div class="task-card">
+      <h3>{{task.title}}</h3>
+      <p>📍 {{task.location}}</p>
+      <p>💰 ${{task.price}}</p>
+
+<button class="primary" (click)="acceptTask(task)">
+  Accept Task
+</button>
+    </div>
+  }
 </div>

@@ -1,0 +1,11 @@
+<div class="request-container">
+  <h2>Request Help</h2>
+
+  <input [(ngModel)]="task.title" placeholder="Task (e.g. Tire change)" />
+  <input [(ngModel)]="task.location" placeholder="Location" />
+  <input [(ngModel)]="task.price" type="number" placeholder="Budget ($)" />
+
+  <button class="primary" (click)="submitTask()">
+    Submit Request
+  </button>
+</div>
