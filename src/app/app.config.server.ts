@@ -1,9 +1,7 @@
 import { ApplicationConfig } from '@angular/core';
-import { provideRouter } from '@angular/router';
-import { routes } from './app.routes';
 
-export const appConfigServer: ApplicationConfig = {
-  providers: [
-    provideRouter(routes)
-  ]
+export const serverConfig: ApplicationConfig = {
+  providers: []
 };
+
+console.log("SERVER CONFIG LOADED");
